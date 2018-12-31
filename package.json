@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:dev": "NODE_ENV=development webpack --config ./.webpack/config.js --mode=development",
-    "build:prod": "NODE_ENV=production webpack --config ./.webpack/config.js --mode production",
+    "build:dev": "NODE_ENV=development webpack-dev-server --config ./.webpack/dev.js",
+    "build:prod": "NODE_ENV=production webpack --config ./.webpack/prod.js",
     "clean": "rimraf ./dist/*"
   },
   "author": "",
@@ -26,6 +26,8 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.28.3",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.1.5"
   }
 }
