@@ -3,4 +3,4 @@
 ## Table of Contents
 
 - [Setup]
-  - [Webpack] (webpack/setup.md)
+  - [Webpack](webpack/setup.md)
