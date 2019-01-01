@@ -4,6 +4,8 @@
   - [AssetManagement](asset_management.md)
   - [OutputManagement](output_management.md)
   - [Environment](setup_dev_prod_env.md)
+## Reduce development time
+  - [HotModuleReplacement](hot_module_replacement.md)
 ## Optimization
   - [TreeShaking](tree_shaking.md) `remove deadcode in production`
   - [UglifyJS](uglifyjs.md)
