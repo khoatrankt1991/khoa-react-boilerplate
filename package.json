@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "NODE_ENV=development webpack-dev-server --config ./.webpack/dev.js",
     "build:prod": "NODE_ENV=production webpack --config ./.webpack/prod.js",
+    "start:prod": "npm run build:prod && node server.js",
     "analyzer:dev": "NODE_ENV=development webpack --config ./.webpack/analyzer.js --mode development",
     "analyzer:prod": "NODE_ENV=production webpack --config ./.webpack/analyzer.js --mode production",
     "clean": "rimraf ./dist/*"
