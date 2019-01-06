@@ -2,15 +2,15 @@ import React from 'react';
 
 const ChildComp = () => (
   <div>
-    <p1>lakdsjflaksjdf</p1>
-    <p1>lakdsjflaksjdf</p1>
-    <p1>lakdsjflaksjdf</p1>
-    <p1>lakdsjflaksjdf</p1>
-    <p1>lakdsjflaksjdf</p1>
-    <p1>lakdsjflaksjdf</p1>
-    <p1>lakdsjflaksjdf</p1>
-    <p1>lakdsjflaksjdf</p1>
-    <p1>lakdsjflaksjdf</p1>
+    <p>Load First Child By Clicking Event</p>
+    <p>Load First Child By Clicking Event</p>
+    <p>Load First Child By Clicking Event</p>
+    <p>Load First Child By Clicking Event</p>
+    <p>Load First Child By Clicking Event</p>
+    <p>Load First Child By Clicking Event</p>
+    <p>Load First Child By Clicking Event</p>
+    <p>Load First Child By Clicking Event</p>
+    <p>Load First Child By Clicking Event</p>
   </div>
 )
 

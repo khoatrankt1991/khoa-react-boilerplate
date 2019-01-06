@@ -2,15 +2,11 @@ import React from 'react';
 
 const ChildComp2 = () => (
   <div>
-    <p>child2</p>
-    <p>child2</p>
-    <p>child2</p>
-    <p>child2</p>
-    <p>child2</p>
-    <p>lakdsjflaksjdf</p>
-    <p>lakdsjflaksjdf</p>
-    <p>lakdsjflaksjdf</p>
-    <p>lakdsjflaksjdf</p>
+    <p>Lazy Load By Using Suspend lazy from react 16.6</p>
+    <p>Lazy Load By Using Suspend lazy from react 16.6</p>
+    <p>Lazy Load By Using Suspend lazy from react 16.6</p>
+    <p>Lazy Load By Using Suspend lazy from react 16.6</p>
+    <p>Lazy Load By Using Suspend lazy from react 16.6</p>
   </div>
 )
 
