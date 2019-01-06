@@ -3,7 +3,7 @@ const ChildComp2 = lazy(() => import('./ChildComp2'));
 import Loadable from "react-loadable";
 const Loading = () => <div>Loading....</div>;
 const AsyncDetail = Loadable({
-  loader: () => import("./ProjectDetail"),
+  loader: () => import("../components/Header"),
   loading: Loading
 });
 

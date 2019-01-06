@@ -2,6 +2,9 @@
 
 ## Asset Management
   - [AssetManagement](asset_management.md)
+    - [ReactLocalCss](https://javascriptplayground.com/css-modules-webpack-react)
+    - [RenameCSSToShortName](https://medium.freecodecamp.org/reducing-css-bundle-size-70-by-cutting-the-class-names-and-using-scope-isolation-625440de600b)
+    - [OtherResource](https://medium.com/@pioul/modular-css-with-react-61638ae9ea3e)
   - [OutputManagement](output_management.md)
   - [Environment](setup_dev_prod_env.md)
 ## Reduce development time

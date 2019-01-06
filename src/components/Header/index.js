@@ -10,7 +10,7 @@ class Header extends React.Component {
     this.setState({ count: this.state.count +1 });
   }
   render() {
-    return <div>
+    return <div className={style.container}>
       <p>Couterr is {this.state.count}</p>
       <button onClick={this.handleOnClick}>Increase</button>
     </div>

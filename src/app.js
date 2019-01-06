@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './components/Header';
 import { Provider } from 'react-redux';
 import store from './store';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
