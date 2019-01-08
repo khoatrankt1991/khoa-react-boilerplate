@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'react';
 
 const ProductDetail = () => (
   <div>Product detail1</div>

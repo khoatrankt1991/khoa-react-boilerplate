@@ -1,4 +1,4 @@
-import React from 'react';
+import { h, Component } from 'react';
 
 class AsyncProductDetail extends React.Component {
   state = {

@@ -94,6 +94,13 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+    alias: {
+      "react": "preact",
+      "react-dom": "preact"
+    }
+  },
   optimization: {
     splitChunks: {
     maxInitialRequests: Infinity,

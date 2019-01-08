@@ -1,8 +1,23 @@
-import React from 'react';
+import { h } from 'react';
 import { Provider } from 'react-redux';
+import { createStore } from 'redux'
 import store from './store';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Loadable from "react-loadable";
+
+function counter(state = 0, action) {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1
+    case 'DECREMENT':
+      return state - 1
+    default:
+      return state
+  }
+}
+const store = createStore(counter);
+
+const App = () => (
+  <div>faldskfjalskdjf</div>
+)
 const Loading = () => <div>Loading....</div>;
 const AsyncHome = Loadable({
   loader: () => import("./container/Home"),
