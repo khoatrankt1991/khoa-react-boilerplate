@@ -1,12 +1,7 @@
-import './app.scss';
-console.log('bundle here11111');
+import './assets/styles/app.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app';
-import { getName, getAsync } from './math';
-console.log(getName(2));
-getAsync();
-
 
 ReactDOM.render(<App />, document.getElementById('app'));
 

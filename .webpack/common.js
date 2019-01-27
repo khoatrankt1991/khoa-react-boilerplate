@@ -62,6 +62,7 @@ module.exports = {
       },
       {
         test: /\.(sa|sc|c)ss$/,
+        exclude: /node_modules/,
         use: [
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
@@ -71,7 +72,7 @@ module.exports = {
               camelCase: true,
               localIdentName: '[name]__[local]___[hash:base64:5]',
               getLocalIdent: (context, localIdentName, localName) => {
-                return generateScopedName(localName, context.resourcePath);
+                return /app.scss$/.test(context.resourcePath) ? localName : generateScopedName(localName, context.resourcePath);
               },
             }
           },
