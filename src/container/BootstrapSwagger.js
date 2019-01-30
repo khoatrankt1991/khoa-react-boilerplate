@@ -2,6 +2,7 @@ import React from 'react';
 // import { Container} from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import FormControl from 'react-bootstrap/FormControl';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Button from 'react-bootstrap/Button';
@@ -11,6 +12,7 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import KCard from '../components/card';
 import KMedia from '../components/media';
+import Chip from '../components/chip';
 
 const items = [
   {
@@ -68,7 +70,7 @@ const BootstrapSwagger = () => (<Container>
     <Button variant="link">Link</Button>
   </ButtonToolbar>
   <Row>Outline buttons</Row>
-  <ButtonToolbar>
+  <ButtonToolbar style={{ display: 'flex', justifyContent: 'space-around' }}>
     <Button variant="outline-primary">Primary</Button>
     <Button variant="outline-secondary">Secondary</Button>
     <Button variant="outline-success">Success</Button>
@@ -106,6 +108,8 @@ const BootstrapSwagger = () => (<Container>
   </Navbar>
   {[1,2,3,4,5,6,7,8].map((e, i) => <KCard key={i} title={'title' + e} desc={'desc' + e} path={`https://picsum.photos/1000/500?image=${e}`}/>)}
   {[1,2,3,4,5,6,7,8].map((e, i) => <KMedia key={i} title={'title' + e} desc={'desc' + e} path={`https://picsum.photos/1000/500?image=${e}`}/>)}
+  <Chip />
+  <FormControl type="text" placeholder="Search" className="mr-sm-2" />
 </Container>);
 
 export default BootstrapSwagger;
