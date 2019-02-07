@@ -1,6 +1,5 @@
 import React from 'react';
-import Chip from '../components/chip';
 
-const User = () => (<div><Chip /></div>);
+const User = () => (<div>User</div>);
 
 export default User;

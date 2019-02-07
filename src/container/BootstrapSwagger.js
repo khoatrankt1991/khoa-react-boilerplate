@@ -2,6 +2,7 @@ import React from 'react';
 // import { Container} from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import FormControl from 'react-bootstrap/FormControl';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
@@ -12,7 +13,6 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import KCard from '../components/card';
 import KMedia from '../components/media';
-import Chip from '../components/chip';
 
 const items = [
   {
@@ -108,8 +108,16 @@ const BootstrapSwagger = () => (<Container>
   </Navbar>
   {[1,2,3,4,5,6,7,8].map((e, i) => <KCard key={i} title={'title' + e} desc={'desc' + e} path={`https://picsum.photos/1000/500?image=${e}`}/>)}
   {[1,2,3,4,5,6,7,8].map((e, i) => <KMedia key={i} title={'title' + e} desc={'desc' + e} path={`https://picsum.photos/1000/500?image=${e}`}/>)}
-  <Chip />
   <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+  <Row>
+    <Col>1 of 2</Col>
+    <Col>2 of 2</Col>
+  </Row>
+  <Row>
+    <Col>1 of 3</Col>
+    <Col>2 of 3</Col>
+    <Col>3 of 3</Col>
+  </Row>
 </Container>);
 
 export default BootstrapSwagger;
