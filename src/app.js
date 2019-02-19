@@ -25,10 +25,6 @@ const AsyncBootstrapSwagger = Loadable({
   loader: () => import("./container/BootstrapSwagger"),
   loading: Loading
 });
-// const Index = () => <h2>Home</h2>;
-// const About = () => <h2>About</h2>;
-// const Users = () => <h2>Users</h2>;
-// const Users1 = () => <h2>Users1</h2>;
 const items = [
   { path: '/', name: 'Home' },
   { path: '/about', name: 'About' },
